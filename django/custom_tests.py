@@ -8,5 +8,4 @@ if __name__ == '__main__':
     author = Author(first_name='Kent', last_name='Beck')
     assert 'Kent Beck' == author.fullname
 
-
     print('Todo correcto')

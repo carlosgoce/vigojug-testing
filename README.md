@@ -2,10 +2,12 @@
 
 TODO:
 
-- [  ] Tests manuales
-- [  ] Tests estilo xUnit
+- [  ] Tests artesanos (custom_tests.py)
+- [  ] xUnit (tests.py)
+- [  ] Pytest (test_models.py)
+- [  ] Mocks (test_services.py, test_mocks.py)
+  - http://www.phpspec.net/en/stable/manual/prophet-objects.html#stubs
 - [  ] Inyección dependencias
-- [  ] Mocks (spies, stubs...) - Servicios externos, tags
 - [  ] ¿Pierdo tiempo con los tests?
 - [  ] ¿Vale la pena hacer TDD?
 - [  ] BDD
