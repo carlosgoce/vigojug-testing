@@ -2,11 +2,11 @@
 
 TODO:
 
-- [  ] Test estilo xUnit
-- [  ] ¿Pierdo tiempo con los tests?
-- [  ] ¿Vale la pena hacer TDD?
+- [  ] Tests estilo xUnit
 - [  ] Inyección dependencias
 - [  ] Mocks (spies, stubs...)
+- [  ] ¿Pierdo tiempo con los tests?
+- [  ] ¿Vale la pena hacer TDD?
 - [  ] BDD
 - [  ] Travis windows y aeat-web-services
 - [  ] Asserts y resultados
@@ -18,3 +18,7 @@ TODO:
 - [  ] Bases de datos y migraciones
 - [  ] Tests de Laravel
 - [  ] Donde guardar tests
+
+```
+Ejemplo BDD tienda producto
+```
