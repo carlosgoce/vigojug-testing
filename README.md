@@ -4,7 +4,7 @@ TODO:
 
 - [  ] Tests estilo xUnit
 - [  ] Inyección dependencias
-- [  ] Mocks (spies, stubs...)
+- [  ] Mocks (spies, stubs...) - Servicios externos, tags
 - [  ] ¿Pierdo tiempo con los tests?
 - [  ] ¿Vale la pena hacer TDD?
 - [  ] BDD
