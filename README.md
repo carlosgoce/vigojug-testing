@@ -2,6 +2,7 @@
 
 TODO:
 
+- [  ] Tests manuales
 - [  ] Tests estilo xUnit
 - [  ] Inyección dependencias
 - [  ] Mocks (spies, stubs...) - Servicios externos, tags
