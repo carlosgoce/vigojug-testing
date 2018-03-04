@@ -2,9 +2,12 @@
 
 TODO:
 
+Organización de Tests a libre albedrío versus imitando la organización de carpetas
+
 - [  ] Tests artesanos (custom_tests.py)
 - [  ] xUnit (tests.py)
 - [  ] Pytest (test_models.py)
+- [  ] Injección de dependencias
 - [  ] Mocks (test_services.py, test_mocks.py)
   - http://www.phpspec.net/en/stable/manual/prophet-objects.html#stubs
 - [  ] Inyección dependencias

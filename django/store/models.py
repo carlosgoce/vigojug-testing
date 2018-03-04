@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 from store import services
 
@@ -6,10 +7,29 @@ from store import services
 class Author(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=255)
+    subscribers = models.ManyToManyField(User, through='AuthorSubscription')
 
     @property
     def fullname(self):
         return f'{self.first_name} {self.last_name}'
+
+
+class Book(models.Model):
+    name = models.CharField(max_length=255)
+    isbn = models.CharField(max_length=255)
+    author = models.ForeignKey(Author, on_delete=models.PROTECT, null=True)
+
+    def author_subscribers(self):
+        return self.author.subscribers.all()
+
+    def publish(self):
+        for subscriber in self.author_subscribers():
+            subscriber.notice_book_published(self)
+
+
+class AuthorSubscription(models.Model):
+    author = models.ForeignKey(Author, on_delete=models.PROTECT)
+    user = models.ForeignKey(User, on_delete=models.PROTECT)
 
 
 class Seller(models.Model):
