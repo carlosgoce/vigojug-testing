@@ -38,8 +38,3 @@ def test_notice_subscribers_when_book_is_published_alternative():
 
     subscribers[0].notice_book_published.assert_called_with(book)
     subscribers[1].notice_book_published.assert_called_with(book)
-
-# TODO
-# Añadir ejemplo con PHP y Injección de dependencias
-# Añadir otro test the location ya definida
-# Hacer otro más de python parametrize
