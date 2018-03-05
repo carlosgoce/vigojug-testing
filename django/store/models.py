@@ -24,7 +24,7 @@ class Book(models.Model):
 
     def publish(self):
         for subscriber in self.author_subscribers():
-            subscriber.notice_book_published(self)
+            subscriber.notify_book_published(self)
 
 
 class AuthorSubscription(models.Model):
@@ -33,6 +33,8 @@ class AuthorSubscription(models.Model):
 
 
 class Seller(models.Model):
+    objects = models.Manager()
+
     name = models.CharField(max_length=255)
     address = models.CharField(max_length=255)
     city = models.CharField(max_length=255)

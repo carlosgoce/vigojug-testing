@@ -1,0 +1,20 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+behave = "*"
+Django = "*"
+"flake8" = "*"
+googlemaps = "*"
+isort = "*"
+pytest = "*"
+pytest-django = "*"
+
+
+[dev-packages]
+

@@ -11,10 +11,12 @@ def test_fullname_is_correctly_displayed():
 @pytest.mark.parametrize('first,last,result', [
     ('Kent', 'Beck', 'Kent Beck'),
     ('Martin', 'Fowler', 'Martin Fowler'),
-    ('Kent', None, 'Kent'),
-    (None, 'Beck', 'Beck'),
-    (None, None, 'Beck'),
+    # Add missing cases
 ])
 def test_fullname(first, last, result):
     author = Author(first_name=first, last_name=last)
     assert result == author.fullname
+
+
+# def test_validate_credit_card():
+#     tdd
